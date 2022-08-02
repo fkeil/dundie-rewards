@@ -16,7 +16,7 @@ jobs:
       fail-fast: false
       matrix:
         python-version: ['3.9', '3.10']
-        os: [ubuntu-latest, mac-os]
+        os: [ubuntu-latest]
     runs-on: ${{matrix.os}}
     steps:
       - uses: actions/checkout@v2
