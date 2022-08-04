@@ -1,4 +1,4 @@
-.PHONY: install virtualenv ipython clean test testci watch
+.PHONY: install virtualenv ipython clean test watch
 
 install:
 	@echo "Hello installing for dev environment"
@@ -12,9 +12,6 @@ ipython:
 
 test:
 	@.venv/bin/pytest -vv -s
-
-testci:
-	@.venv/bin/pytest -v --junitxml=test-result.xml
 
 watch:
 	@.venv/bin/ptw
