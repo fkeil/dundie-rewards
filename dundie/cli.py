@@ -21,6 +21,9 @@ def main():
     """Dunder Mifflin Rewars system.
 
     This CLI application controls DM rewars.
+    - Load employees to db
+    - Show status
+    - Add/Remove points
     """
 
 
@@ -58,7 +61,10 @@ def load(filepath):
 @click.option("--email", required=False)
 @click.option("--output", default=None)
 def show(output, **query):
-    """Show information about users."""
+    """Show information about users.
+
+    --output=file.csv to save
+    """
     result = core.read(**query)
     if output:
         with open(output, "w") as output_file:

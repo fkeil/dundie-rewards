@@ -17,9 +17,9 @@
         }
     },
     "balance": {
-        "jim@dundlermifflin.com": 500,
-        "Schrute@dundlermifflin.com": 100,
-        "glewis@dundlermifflin.com": 500
+        "jim@dundlermifflin.com": 660,
+        "Schrute@dundlermifflin.com": 210,
+        "glewis@dundlermifflin.com": 550
     },
     "movement": {
         "jim@dundlermifflin.com": [
@@ -47,6 +47,26 @@
                 "date": "2022-08-06T22:23:19.600335",
                 "actor": "codespace",
                 "value": -10
+            },
+            {
+                "date": "2022-08-06T22:48:12.811512",
+                "actor": "codespace",
+                "value": 10
+            },
+            {
+                "date": "2022-08-07T06:13:10.337264",
+                "actor": "codespace",
+                "value": 50
+            },
+            {
+                "date": "2022-08-07T06:13:18.206275",
+                "actor": "codespace",
+                "value": 50
+            },
+            {
+                "date": "2022-08-07T06:13:33.672757",
+                "actor": "codespace",
+                "value": 50
             }
         ],
         "Schrute@dundlermifflin.com": [
@@ -74,6 +94,21 @@
                 "date": "2022-08-06T22:23:19.600349",
                 "actor": "codespace",
                 "value": -10
+            },
+            {
+                "date": "2022-08-06T22:48:12.811528",
+                "actor": "codespace",
+                "value": 10
+            },
+            {
+                "date": "2022-08-07T06:13:10.337280",
+                "actor": "codespace",
+                "value": 50
+            },
+            {
+                "date": "2022-08-07T06:13:18.206292",
+                "actor": "codespace",
+                "value": 50
             }
         ],
         "glewis@dundlermifflin.com": [
@@ -81,6 +116,11 @@
                 "date": "2022-08-06T21:43:03.424798",
                 "actor": "system",
                 "value": 500
+            },
+            {
+                "date": "2022-08-07T06:13:10.337284",
+                "actor": "codespace",
+                "value": 50
             }
         ]
     },

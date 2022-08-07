@@ -1,4 +1,4 @@
-.PHONY: install virtualenv ipython clean test pflake8
+.PHONY: install virtualenv ipython clean test pflake8 fmt lint watch docs docs-serve build
 
 install:
 	@echo "Hello installing for dev environment"
@@ -37,3 +37,21 @@ clean:            ## Clean unused files.
 	@rm -rf htmlcov
 	@rm -rf .tox/
 	@rm -rf docs/_build
+
+docs:
+	@mkdocs build --clean
+
+docs-serve:
+	@mkdocs server
+
+build:
+	@python setup.py sdist bdist_wheel
+
+	### TWINE_PASSWORD=pypi-AgENdGVzdC5weXBpLm9yZwIkZDQ2MTdlNzgtNzhiMi00ZDJmLThjYWQtNmMwZTVmYmMyMTAyAAIleyJwZXJtaXNzaW9ucyI6ICJ1c2VyIiwgInZlcnNpb24iOiAxfQAABiCFEq-pmC-s7TNWby7rlQQ-zHt9INILfjNjL-Xj0Z_SBQ
+	### TWINE_USERNAME=__token__
+
+publish-test:
+	@twine upload --repository testpypi dist/*
+
+publish:
+	@twine upload dist/*
