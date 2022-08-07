@@ -1,11 +1,23 @@
+# dev dependencies
 ipython>=7.0.0<=8.0.0
 ipdb
 pudb
 pytest-watch
+
+# Code Quality 
 flake8==4.0.1
 pyproject-flake8
+# flake8-docstrings documentacao
 black
 isort
+
+# Docs
+mkdocs
+mkdocs-material
+
+# Setup
+wheel
+twine
 
 # Install project as editable
 -e .
