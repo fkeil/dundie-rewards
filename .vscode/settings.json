@@ -2,5 +2,9 @@
     "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
     "python.formatting.provider": "black",
-    "python.linting.flake8Path": "pflake8"
+    "python.linting.flake8Path": "pflake8",
+    "editor.rulers": [79],
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#e116f4"
+    },
 }

@@ -33,7 +33,7 @@ setup(
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
     author="Fernando Keil",
-    python_requires=">=3.8",
+    python_requires=">=3.10",
     packages=find_packages(exclude=["integration"]),
     include_package_data=True,
     entry_points={

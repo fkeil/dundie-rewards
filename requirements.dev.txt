@@ -3,6 +3,7 @@ ipython>=7.0.0<=8.0.0
 ipdb
 pudb
 pytest-watch
+pytest-forked
 
 # Code Quality 
 flake8==4.0.1
