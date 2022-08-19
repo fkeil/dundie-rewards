@@ -5,7 +5,7 @@ install:
 	@.venv/bin/python -m pip install -e '.[dev]'
 
 virtualenv:
-	@.venv/bin/python -m pip -m venv .venv
+	@python -m venv .venv
 
 ipython:
 	@.venv/bin/ipython
