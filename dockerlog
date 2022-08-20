@@ -1,0 +1,23 @@
+sudo apt update
+sudo apt upgrade -y
+sudo apt-get install python3-tk -y
+sudo apt install python3.8-venv -y
+sudo apt-get install make -y
+sudo apt install sqlite3 -y
+
+wget https://bootstrap.pypa.io/get-pip.py
+python3 get-pip.py
+
+
+sudo apt install software-properties-common -y
+sudo apt install firefox-esr -y
+
+sudo apt-get install wget build-essential libreadline-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev -y
+wget -c https://www.python.org/ftp/python/3.10.6/Python-3.10.6.tar.xz
+tar -Jxvf Python-3.10.6.tar.xz
+cd Python-3.10.6
+./configure --enable-optimizations
+sudo make altinstall
+sudo python -m pip install --upgrade pip
+sudo update-alternatives --install /usr/bin/python python /usr/local/bin/python3.10 1
+sudo update-alternatives --install /usr/bin/pip pip /usr/local/bin/pip3.10 1
