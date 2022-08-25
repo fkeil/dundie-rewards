@@ -47,8 +47,7 @@ docs-serve:
 build:
 	@python setup.py sdist bdist_wheel
 
-	### TWINE_PASSWORD=pypi-AgENdGVzdC5weXBpLm9yZwIkZDQ2MTdlNzgtNzhiMi00ZDJmLThjYWQtNmMwZTVmYmMyMTAyAAIleyJwZXJtaXNzaW9ucyI6ICJ1c2VyIiwgInZlcnNpb24iOiAxfQAABiCFEq-pmC-s7TNWby7rlQQ-zHt9INILfjNjL-Xj0Z_SBQ
-	### TWINE_USERNAME=__token__
+	### TWINE_PASSWORD=_
 
 publish-test:
 	@twine upload --repository testpypi dist/*
