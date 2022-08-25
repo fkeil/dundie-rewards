@@ -1,7 +1,6 @@
 import pytest
 
-from dundie.database import EMPTY_DB, add_movement, add_person, commit, connect
-
+from dundie.utils.db import add_movement, add_person
 
 @pytest.mark.unit
 def test_database_schema():
